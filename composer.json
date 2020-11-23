@@ -1,0 +1,27 @@
+{
+    "name": "neighborhoods/datadog-component",
+    "description": "A component to provide access to the Datadog PHP API.",
+    "authors": [
+        {
+            "name": "Harsh Patel",
+            "email": "harsh.patel@55places.com"
+        },
+        {
+            "name": "Brad Wilson",
+            "email": "brad.wilson@neighborhoods.com"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "datadog/dd-trace": "0.51.0"
+    },
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Neighborhoods\\DatadogComponent\\": [
+                "src"
+            ]
+        }
+    }
+}

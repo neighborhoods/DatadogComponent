@@ -1,0 +1,5 @@
+services:
+  Neighborhoods\DatadogComponent\GlobalTracer\RepositoryInterface:
+    class: Neighborhoods\DatadogComponent\GlobalTracer\Repository
+    public: false
+    shared: true

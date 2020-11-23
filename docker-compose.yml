@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  datadog-component:
+    build: docker/datadog-component
+
+    restart: always
+    ports:
+      - 9041
+      - 9000
+    volumes:
+      - ../DatadogComponent:/var/www/html/datadog-component

@@ -1,0 +1,90 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "dd01713f189fbb2e31c87a4d0e6a9398",
+    "packages": [
+        {
+            "name": "datadog/dd-trace",
+            "version": "0.51.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DataDog/dd-trace-php.git",
+                "reference": "963a83c33390e115c22a5c861e5674646438075a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DataDog/dd-trace-php/zipball/963a83c33390e115c22a5c861e5674646438075a",
+                "reference": "963a83c33390e115c22a5c861e5674646438075a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": "^5.4 || ^7.0 || ^8.0.0"
+            },
+            "require-dev": {
+                "ext-posix": "*",
+                "g1a/composer-test-scenarios": "~3.0",
+                "mockery/mockery": "*",
+                "phpunit/phpunit": "*",
+                "squizlabs/php_codesniffer": "^3.3.0",
+                "symfony/process": "<5"
+            },
+            "type": "library",
+            "extra": {
+                "scenarios": {
+                    "opentracing1": {
+                        "require": {
+                            "opentracing/opentracing": "1.0.0-beta6"
+                        },
+                        "scenario-options": {
+                            "create-lockfile": false
+                        }
+                    }
+                },
+                "scenario-options": {
+                    "dependency-licenses": false
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DDTrace\\": "./src/api/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "José Carlos Chávez",
+                    "email": "jcchavezs@gmail.com"
+                },
+                {
+                    "name": "DataDog",
+                    "email": "dev@datadoghq.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP APM Client",
+            "keywords": [
+                "DataDog",
+                "php",
+                "tracing"
+            ],
+            "time": "2020-11-17T15:24:54+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}
